@@ -1,15 +1,8 @@
+import Header from "@/components/Header";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f6f4ef] text-[#1a1a1a]">
-      <header className="flex items-center justify-between px-6 py-5 md:px-12">
-        <span className="font-serif text-2xl">Фуршет</span>
-        <a
-          href="#contacts"
-          className="rounded-full bg-[#e53935] px-5 py-2 text-sm font-semibold text-white transition hover:opacity-90"
-        >
-          Обсудить событие
-        </a>
-      </header>
+      <Header />
 
       <section className="mx-auto max-w-3xl px-6 pb-24 pt-16 text-center md:pt-28">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#e53935]">
