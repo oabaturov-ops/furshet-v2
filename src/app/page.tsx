@@ -2,8 +2,37 @@ import Image from "next/image";
 import Header from "@/components/Header";
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f6f4ef] text-[#1a1a1a]">
+   
+       
+   <main className="min-h-screen bg-[#f6f4ef] text-[#1a1a1a]">
       <Header />
+
+<section className="relative">
+        <div className="grid h-screen grid-cols-2">
+          <div className="relative">
+            <Image
+              src="/images/top-left.jpg"
+              alt="Банкетный зал со свечами и цветами"
+              fill
+              priority
+              sizes="50vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative">
+            <Image
+              src="/images/top-right.jpg"
+              alt="Элегантная сервировка стола"
+              fill
+              sizes="50vw"
+              className="object-cover"
+            />
+          </div>
+        </div>
+        <div className="absolute left-1/2 top-1/2 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#f6f4ef] shadow-lg md:h-36 md:w-36">
+          <span className="font-serif text-5xl md:text-7xl">А</span>
+        </div>
+      </section>
 
             <section className="mx-auto grid max-w-6xl items-center gap-10 px-6 pb-24 pt-10 md:grid-cols-2 md:gap-14 md:pt-20">
         <div>
@@ -34,12 +63,24 @@ export default function Home() {
             alt="Сервированный стол для фуршета"
             fill
             priority
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
           />
         </div>
       </section>
 
-      <footer id="contacts" className="border-t border-[#e5e0d5] px-6 py-10 text-center md:px-12">
+      
+
+      <section className="mx-auto max-w-3xl px-6 py-20 text-center md:py-28">
+        <p className="font-serif text-2xl leading-snug md:text-4xl">
+          Фуршет — кейтеринговая компания из Перми, специализирующаяся на
+          выездных фуршетах, банкетах и коктейлях премиального уровня. Мы
+          известны безупречной едой, напитками и сервисом на каждом событии —
+          от первого бокала до последнего гостя.
+        </p>
+      </section>
+
+          <footer id="contacts" className="border-t border-[#e5e0d5] px-6 py-10 text-center md:px-12">
         <p className="font-serif text-xl">Фуршет · Пермь</p>
         <p className="mt-2 text-sm text-[#4a4a4a]">
           +7 900 000-00-00 · hello@furshet-perm.ru
