@@ -17,7 +17,7 @@ export default function Home() {
               fill
               priority
               sizes="50vw"
-              className="object-cover"
+              className="object-cover transition duration-500 hover:brightness-75"
             />
           </div>
           <div className="relative">
@@ -26,7 +26,7 @@ export default function Home() {
               alt="Элегантная сервировка стола"
               fill
               sizes="50vw"
-              className="object-cover"
+              className="object-cover transition duration-500 hover:brightness-75"
             />
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function Home() {
             fill
             priority
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover"
+            className="object-cover transition duration-500 hover:brightness-75"
           />
         </div>
       </section>
