@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import { DISHES } from "@/lib/menu";
+import Menu from "@/components/Menu";
 export default function Home() {
   return (
    
@@ -81,28 +82,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section id="menu" className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-  <p className="text-center text-sm uppercase tracking-widest text-[#e53935]">Меню</p>
-  <h2 className="mt-3 text-center font-serif text-3xl md:text-5xl">Блюда фуршета</h2>
-  <div className="mt-12 grid gap-8 md:grid-cols-3">
-    {DISHES.map((dish) => (
-      <div key={dish.name} className="group">
-        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
-          <Image
-            src={dish.image}
-            alt={dish.name}
-            fill
-            sizes="(max-width: 768px) 100vw, 33vw"
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
-        <h3 className="mt-5 font-serif text-xl md:text-2xl">{dish.name}</h3>
-        <p className="mt-2 text-sm text-neutral-600">{dish.description}</p>
-        <p className="mt-3 font-semibold">{dish.price} ₽</p>
-      </div>
-    ))}
-  </div>
-</section>
+  <Menu />
 
           <footer id="contacts" className="border-t border-[#e5e0d5] px-6 py-10 text-center md:px-12">
         <p className="font-serif text-xl">Фуршет · Пермь</p>

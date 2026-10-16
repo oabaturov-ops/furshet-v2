@@ -1,10 +1,18 @@
-// Блюда фуршета. Кирпич 8 подключит живую базу — этот список станет страховкой.
+// Блюда фуршета. Кирпич 10 подключит живую базу — этот список станет страховкой.
 export interface Dish {
   name: string;
   description: string;
   price: number;
   image: string;
+  category: string;
 }
+
+export const CATEGORIES = [
+  "Все",
+  "Холодные закуски",
+  "Горячие закуски",
+  "Десерты",
+];
 
 export const DISHES: Dish[] = [
   {
@@ -12,17 +20,20 @@ export const DISHES: Dish[] = [
     description: "Сезонные фрукты, виноград и ягоды",
     price: 450,
     image: "/images/dishes/fruits.jpg",
+    category: "Десерты",
   },
   {
     name: "Тарталетки с креветкой и лососем",
     description: "Креветка, слабосолёный лосось, сливочный сыр",
     price: 480,
     image: "/images/dishes/tartlets.jpg",
+    category: "Холодные закуски",
   },
   {
     name: "Слоёные закуски с оливками",
     description: "Слоёное тесто, оливки, сыр, зелень",
     price: 320,
     image: "/images/dishes/pastry.jpg",
+    category: "Горячие закуски",
   },
 ];
