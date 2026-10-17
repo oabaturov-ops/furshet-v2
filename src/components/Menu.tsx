@@ -1,14 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { DISHES, CATEGORIES } from "@/lib/menu";
 
 export default function Menu() {
   const [cat, setCat] = useState("Все");
 
-  const dishes =
-    cat === "Все" ? DISHES : DISHES.filter((d) => d.category === cat);
+    const [allDishes, setAllDishes] = useState(DISHES);
+
+  useEffect(() => {
+    fetch("/api/dishes")
+      .then((r) => r.json())
+      .then((data) => {
+        if (Array.isArray(data) && data.length > 0) setAllDishes(data);
+      })
+      .catch(() => {});
+  }, []);
+
+  const dishes = cat === "Все" ? allDishes : allDishes.filter((d) => d.category === cat);
 
   return (
     <section id="menu" className="mx-auto max-w-6xl px-6 py-20 md:py-28">
