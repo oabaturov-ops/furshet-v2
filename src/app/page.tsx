@@ -100,8 +100,7 @@ export default function Home() {
             src="/images/hero5.jpg"
             alt="Сервированный стол для фуршета"
             fill
-            priority 
-            sizes="(max-width: 768px) 100vw, 50vw"
+             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover transition duration-500 hover:brightness-75"
           />
         </div>
@@ -130,7 +129,7 @@ export default function Home() {
           © 2026 Фуршет Пермь. Все права защищены.
         </div>
         <p className="mt-6 text-xs uppercase tracking-[0.25em] text-[#9a938a]">
-          Создан <a href="https://www.olegwebsolutions.ru/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 decoration-[#e53935] transition-colors hover:text-[#e53935]">студия OWS Web Lab</a>
+          Создано <a href="https://www.olegwebsolutions.ru/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 decoration-[#e53935] transition-colors hover:text-[#e53935]">студией OWS Web Lab</a>
         </p>
       </footer>
     </main>
