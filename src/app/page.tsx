@@ -16,8 +16,7 @@ export default function Home() {
               src="/images/top-left.jpg"
               alt="Банкетный зал со свечами и цветами"
               fill
-              priority
-              sizes="50vw"
+               sizes="50vw"
               className="object-cover transition duration-500 hover:brightness-75"
             />
           </div>
@@ -65,8 +64,7 @@ export default function Home() {
             src="/images/hero.jpg"
             alt="Сервированный стол для фуршета"
             fill
-            priority
-            sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover transition duration-500 hover:brightness-75"
           />
         </div>
@@ -78,11 +76,11 @@ export default function Home() {
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#e53935]">
             Кейтеринг в Перми
           </p>
-          <h1 className="mt-6 font-serif text-4xl leading-tight md:text-5xl lg:text-6xl">
+          <h2 className="mt-6 font-serif text-4xl leading-tight md:text-5xl lg:text-6xl">
             Не просто обед. Это искусство
-          </h1>
+          </h2>
           <p className="mt-6 max-w-md text-base leading-relaxed text-[#4a4a4a] md:text-lg">
-            Запоминающийся ужин при свечах. Обеспечение с нас.
+            Вечер при свечах. Организация — на нас.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a href="#menu" className="rounded-full bg-[#1a1a1a] px-8 py-3 text-center text-sm font-semibold text-white transition hover:opacity-90">
@@ -100,8 +98,7 @@ export default function Home() {
             src="/images/hero5.jpg"
             alt="Сервированный стол для фуршета"
             fill
-            priority
-            sizes="(max-width: 768px) 100vw, 50vw"
+             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover transition duration-500 hover:brightness-75"
           />
         </div>
