@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <>
       <header className="relative z-50 flex items-center justify-between px-6 py-5 md:px-12">
-        <a href="#" className="font-serif text-2xl">
+        <a href="/" className="font-serif text-2xl">
           Фуршет
         </a>
 
