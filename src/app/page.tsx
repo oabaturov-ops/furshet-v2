@@ -26,6 +26,7 @@ export default function Home() {
               src="/images/top-right.jpg"
               alt="Элегантная сервировка стола"
               fill
+              priority 
               sizes="50vw"
               className="object-cover transition duration-500 hover:brightness-75"
             />
@@ -99,6 +100,7 @@ export default function Home() {
             src="/images/hero5.jpg"
             alt="Сервированный стол для фуршета"
             fill
+            priority 
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover transition duration-500 hover:brightness-75"
           />
