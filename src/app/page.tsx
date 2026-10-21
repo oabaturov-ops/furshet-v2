@@ -127,7 +127,7 @@ export default function Home() {
           +7 900 000-00-00 · hello@furshet-perm.ru
         </p>
         <div className="text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Фуршет Пермь. Все права защищены.
+          © 2026 Фуршет Пермь. Все права защищены.
         </div>
         <p className="mt-6 text-xs uppercase tracking-[0.25em] text-[#9a938a]">
           Создан <a href="https://www.olegwebsolutions.ru/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 decoration-[#e53935] transition-colors hover:text-[#e53935]">студия OWS Web Lab</a>
