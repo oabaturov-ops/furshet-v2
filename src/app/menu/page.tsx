@@ -1,8 +1,17 @@
+import type { Metadata } from "next";
+import Menu from "@/components/Menu";
+
+export const metadata: Metadata = {
+  title: "Блюда фуршета — Фуршет Пермь",
+  description:
+    "Канапе, тарталетки, горячее и десерты. Собираем меню под ваше событие.",
+};
+
 export default function MenuPage() {
   return (
-    <main className="min-h-screen px-6 pt-16">
-      <h1 className="font-serif text-4xl md:text-5xl">Меню</h1>
-      <p className="mt-4 text-[#4a4a4a]">Здесь будет полное меню — кирпич 16.</p>
+    <main>
+      <h1 className="sr-only">Блюда фуршета</h1>
+      <Menu />
     </main>
   );
 }
