@@ -1,13 +1,11 @@
 import Image from "next/image";
-import Header from "@/components/Header";
 import { DISHES } from "@/lib/menu";
 import Menu from "@/components/Menu";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f6f4ef] text-[#1a1a1a]">
-      <Header />
-
+     
       {/* СЕКЦИЯ 1: Главный экран с двумя фото */}
       <section className="relative">
         <div className="grid h-screen grid-cols-2">
@@ -120,18 +118,7 @@ export default function Home() {
       <Menu />
 
       {/* ПОДВАЛ (ФУТЕР) */}
-      <footer id="contacts" className="border-t border-[#e5e0d5] px-6 py-10 text-center md:px-12">
-        <p className="font-serif text-xl">Фуршет · Пермь</p>
-        <p className="mt-2 text-sm text-[#4a4a4a]">
-          +7 900 000-00-00 · hello@furshet-perm.ru
-        </p>
-        <div className="text-center text-sm text-muted-foreground">
-          © 2026 Фуршет Пермь. Все права защищены.
-        </div>
-        <p className="mt-6 text-xs uppercase tracking-[0.25em] text-[#9a938a]">
-          Создано <a href="https://www.olegwebsolutions.ru/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 decoration-[#e53935] transition-colors hover:text-[#e53935]">студией OWS Web Lab</a>
-        </p>
-      </footer>
+      
     </main>
   );
 }
