@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const MENU = [
   { label: "Блюда фуршета", href: "/menu" },
-  { label: "Мы с вами", href: "#about" },
+  { label: "Мы с вами", href: "/about" },
   { label: "Как мы работаем", href: "#process" },
   { label: "Контакты", href: "#contacts" },
   { label: "Истории", href: "#stories" },
