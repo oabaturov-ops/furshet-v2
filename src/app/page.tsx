@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { DISHES } from "@/lib/menu";
-import Menu from "@/components/Menu";
 
 export default function Home() {
   return (
@@ -114,11 +113,7 @@ export default function Home() {
         </p>
       </section>
 
-      {/* СЕКЦИЯ 5: Меню */}
-      <Menu />
-
-      {/* ПОДВАЛ (ФУТЕР) */}
-      
+            
     </main>
   );
 }
